@@ -1,19 +1,19 @@
 // react
-import React from "react";
+import React from 'react';
 
 // recharts
 import {
   Area,
   AreaChart,
-  CartesianGrid,
+  // CartesianGrid,
   ResponsiveContainer,
-  Tooltip,
+  // Tooltip,
   XAxis,
   YAxis,
-} from "recharts";
+} from 'recharts';
 
 // date-fns
-import { format, parseISO, subDays } from "date-fns";
+import { subDays } from 'date-fns';
 
 // dummy data - last 30 days, some value
 const data = [];
