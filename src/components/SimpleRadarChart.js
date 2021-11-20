@@ -1,5 +1,5 @@
 // react
-import React from "react";
+import React from 'react';
 
 // recharts
 import {
@@ -8,23 +8,23 @@ import {
   Radar,
   RadarChart,
   ResponsiveContainer,
-} from "recharts";
+} from 'recharts';
 
 // data
-import { report_card } from "../data/report_card";
-import { email_threats } from "../data/email_threats";
+// import { report_card } from "../data/report_card";
+import { email_threats } from '../data/email_threats';
 
 // styles
-import "../styles/charts.css";
+import '../styles/charts.css';
 
 function SimpleRadarChart() {
   // test data access
   //   console.log(report_card.length); // 5
-  console.log("email threats", email_threats); // 1
+  console.log('email threats', email_threats); // 1
 
   return (
     <div className="chart-container">
-      <ResponsiveContainer width="100%" aspect={1}>
+      <ResponsiveContainer width="100%" height={500}>
         <RadarChart
           cx="50%"
           cy="50%"
