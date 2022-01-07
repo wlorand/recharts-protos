@@ -1,28 +1,22 @@
 // react
-import React from "react";
+import React from 'react';
 
 // data
-import { security_products } from "../data/security_products";
+import { security_products } from '../data/security_products';
 
 // recharts
-import {
-  Legend,
-  PolarGrid,
-  RadialBar,
-  RadialBarChart,
-  Tooltip,
-} from "recharts";
+import { Legend, PolarGrid, RadialBar, RadialBarChart } from 'recharts';
 
 // styles
-import "../styles/charts.css";
-import "../styles/SecurityProductsRadialChart.css";
+import '../styles/charts.css';
+import '../styles/SecurityProductsRadialChart.css';
 
 function RadialBarChartProto() {
   // must be inline style?
   const legendWrapperStyle = {
     top: 40,
     left: 510,
-    lineHeight: "24px",
+    lineHeight: '24px',
   };
 
   return (
@@ -41,7 +35,7 @@ function RadialBarChartProto() {
       >
         <RadialBar
           minAngle={15}
-          label={{ position: "insideStart", fill: "#fff" }}
+          label={{ position: 'insideStart', fill: '#fff' }}
           background
           clockWise={false}
           dataKey="installed"

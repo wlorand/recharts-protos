@@ -15,7 +15,7 @@ import {
 // date-fns
 import { subDays } from 'date-fns';
 
-// dummy data - last 30 days, some value
+// dummy data generation - last 30 days, some value
 const data = [];
 for (let num = 30; num >= 0; num--) {
   // push some objects into the data array
